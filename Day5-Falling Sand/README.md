@@ -1,5 +1,7 @@
 # Falling Sand : Cellular Automata
 
+> ***Note: I may modify or update the main source for more optimization in the future, but the concept of the simulation remains the same.***
+
 Falling Sand simulation is very simple and plain, but looks like a real physics engine's work. This note explores its generation using `PyGame(Python)`.
 
 https://github.com/user-attachments/assets/5dc21f50-94f8-419a-a5fd-0b846a3f77fd
@@ -228,5 +230,3 @@ If the cell underneath is settled, the current cell tries to move diagonally. If
 We random check any of the right or left diagonal cell. the last portion of the update function is the same as this one, just a little bit randomness while choosing which cell to check first for going diagonal.
 
 This approach ensures that each cell is updated correctly, simulating the natural behavior of falling sand. The `visited` state prevents redundant updates within the same frame, and the `settled` state optimizes the simulation by skipping cells that have reached a stable state.
-
-> ***Note: I may modify or update the main source for more optimization in the future, but the concept of the simulation remains the same.***
