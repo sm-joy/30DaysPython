@@ -2,6 +2,8 @@
 
 Falling Sand simulation is very simple and plain, but looks like a real physics engine's work. This note explores its generation using `PyGame(Python)`.
 
+https://github.com/user-attachments/assets/5dc21f50-94f8-419a-a5fd-0b846a3f77fd
+
 ## Logic Explanation
 
 The Falling Sand simulation works with three simple rules for creating a `Cellular Autmata` like simulation. The simulation looks very real, depending on the sand size or the cell size. The smaller the sand, the more real it looks. The simulation works with these three rules:
